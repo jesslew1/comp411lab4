@@ -42,7 +42,7 @@ for (int i = 0; i < NUM -1; i++){
         if (strcmp(Strings[j], Strings[j+1]) > 0) {
             strcpy(tempString, Strings[j]);
             strcpy(Strings[j], Strings[j+1]);
-            strcpy(Strings[j+1], tempstring);
+            strcpy(Strings[j+1], tempString);
 		}
     }
 }

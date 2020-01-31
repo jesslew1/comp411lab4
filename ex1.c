@@ -31,7 +31,7 @@ int my_compare_strings(char string1[], char string2[]) {
       } 
       if (string2[i] < string1[i]){
           return 1;
-      } 
+      }
   }
   return 0;
 }
@@ -66,7 +66,7 @@ int main()
      long does not exceed the bounds imposed by the string's length.  Note that the
      newline and NULL characters will be included in LEN.
   */
-  for (int i = 0; i < NUM; i++){
+  for (int i = 0; i <NUM; i++){
       fgets(Strings[i], LEN, stdin);
   }
   puts("\nHere are the strings in the order you entered:");
@@ -85,15 +85,13 @@ for (int i = 0; i < NUM; i++){
   */
 int arrange;
 for (int i = 0; i < NUM -1; i++){
-    for (int j = 0; j < NUM - 1 -i; j++){
-        arrange = my_compare_strings(Strings[j], Strings[j+1]);
+    for (int j = 0; j < NUM - i -1; j++){
+        arrange = my_compare_strings(Strings[i], Strings[j]);
         if (arrange == 1){
-            my_swap_strings(Strings[j], Strings[j+1]);
-        } 
-        if (arrange == -1) {
+            my_swap_strings(Strings[i], Strings[j]);
+        } else if (arrange == -1) {
             continue;
-        } 
-        if (arrange == 0){
+        } else if (arrange == 0){
             continue;
         }
     }
