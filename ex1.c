@@ -66,7 +66,7 @@ int main()
      long does not exceed the bounds imposed by the string's length.  Note that the
      newline and NULL characters will be included in LEN.
   */
-  for (int i = 0; i <NUM; i++){
+  for (int i = 0; i < NUM; i++){
       fgets(Strings[i], LEN, stdin);
   }
   puts("\nHere are the strings in the order you entered:");
@@ -86,7 +86,7 @@ for (int i = 0; i < NUM; i++){
 int arrange;
 for (int i = 0; i < NUM -1; i++){
     for (int j = 0; j < NUM - i -1; j++){
-        arrange = my_compare_strings(Strings[i], Strings[j]);
+        arrange = my_compare_strings(Strings[j], Strings[j+1]);
         if (arrange == 1){
             my_swap_strings(Strings[j], Strings[j+1]);
         } 
