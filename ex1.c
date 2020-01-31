@@ -85,7 +85,7 @@ for (int i = 0; i < NUM; i++){
   */
 int arrange;
 for (int i = 0; i < NUM -1; i++){
-    for (int j = 0; j < NUM - i -1; j++){
+    for (int j = 0; j < NUM - 1 -i; j++){
         arrange = my_compare_strings(Strings[j], Strings[j+1]);
         if (arrange == 1){
             my_swap_strings(Strings[j], Strings[j+1]);
