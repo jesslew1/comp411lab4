@@ -40,7 +40,7 @@ for (int i = 0; i < NUM; i++){
 for (int i = 0; i < NUM -1; i++){
     for (int j = 0; j < NUM - 1 -i; j++){
         if (strcmp(Strings[j], Strings[j+1]) > 0) {
-            strcpy(tempstring, Strings[j]);
+            strcpy(tempString, Strings[j]);
             strcpy(Strings[j], Strings[j+1]);
             strcpy(Strings[j+1], tempstring);
 		}
