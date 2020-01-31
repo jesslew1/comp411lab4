@@ -26,9 +26,10 @@ int my_compare_strings(char string1[], char string2[]) {
       for more details.
   */
   for (int i =0; i < LEN; i++){
-      if (string2[i] > string1[i]{
+      if (string2[i] > string1[i]){
           return -1;
-      } if (string2[i] < string1[i]){
+      } 
+      if (string2[i] < string1[i]){
           return 1;
       }
   }
@@ -84,7 +85,7 @@ for (int i = 0; i < NUM; i++){
   */
 int arrange;
 for (int i = 0; i < NUM -1; i++){
-    for (int j = 0; j < NUM - i -1){
+    for (int j = 0; j < NUM - i -1; j++){
         arrange = my_compare_strings(Strings[i], Strings[j]);
         if (arrange == 1){
             my_swap_strings(Strings[i], Strings[j]);
