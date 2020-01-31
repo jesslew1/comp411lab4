@@ -89,9 +89,11 @@ for (int i = 0; i < NUM -1; i++){
         arrange = my_compare_strings(Strings[i], Strings[j]);
         if (arrange == 1){
             my_swap_strings(Strings[i], Strings[j]);
-        } else if (arrange == -1) {
+        } 
+        if (arrange == -1) {
             continue;
-        } else if (arrange == 0){
+        } 
+        if (arrange == 0){
             continue;
         }
     }
