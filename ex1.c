@@ -28,12 +28,12 @@ int my_compare_strings(char string1[], char string2[]) {
   for (int i =0; i < LEN; i++){
       if (string2[i] > string1[i]){
           return -1;
-      } 
-      if (string2[i] < string1[i]){
+      } else if (string2[i] < string1[i]){
           return 1;
+      } else {
+          return 0;
       }
   }
-  return 0;
 }
 
 
