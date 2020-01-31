@@ -88,7 +88,7 @@ for (int i = 0; i < NUM -1; i++){
     for (int j = 0; j < NUM - i -1; j++){
         arrange = my_compare_strings(Strings[i], Strings[j]);
         if (arrange == 1){
-            my_swap_strings(Strings[i], Strings[j]);
+            my_swap_strings(Strings[j-1], Strings[j]);
         } 
         if (arrange == -1) {
             continue;
