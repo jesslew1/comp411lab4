@@ -28,12 +28,12 @@ int my_compare_strings(char string1[], char string2[]) {
   for (int i =0; i < LEN; i++){
       if (string2[i] > string1[i]){
           return -1;
-      } else if (string2[i] < string1[i]){
+      } 
+      if (string2[i] < string1[i]){
           return 1;
-      } else if ( string2[i] = string1[i]){
-          return 0;
       }
   }
+  return 0;
 }
 
 
@@ -83,15 +83,15 @@ for (int i = 0; i < NUM; i++){
      use the function my_swap_strings() to swap their contents.
 
   */
-// int arrange;
+int arrange;
 for (int i = 0; i < NUM -1; i++){
     for (int j = 0; j < NUM - 1 -i; j++){
-        // arrange = my_compare_strings(Strings[j], Strings[j+1]);
-        if (my_compare_strings(Strings[j], Strings[j+1]) == 1){
+        arrange = my_compare_strings(Strings[j], Strings[j+1]);
+        if (arrange == 1){
             my_swap_strings(Strings[j], Strings[j+1]);
-        } else if (my_compare_strings(Strings[j], Strings[j+1]) == -1) {
+        } else if (arrange == -1) {
             continue;
-        } else if (my_compare_strings(Strings[j], Strings[j+1]) == 0){
+        } else if (arrange == 0){
             continue;
         }
     }
